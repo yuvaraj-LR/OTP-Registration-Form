@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="company-logo">
+            <img src="img/images.png" alt="">
+        </div>
+        <div class="register-form">
+            <form action="index.php" method="post" enctype="multipart/form-data">
+                <div class="top">
+                    <h1>Register Here</h1> <br>
+                </div>
+                <div class="name-column">
+                    <h3>Full Name</h3>
+                    <input type="text" name="fullname" placeholder="Name...">
+                </div> <br>
+                <div class="email-column">
+                    <h3>Email</h3>
+                    <input type="email" name="email" placeholder="abc@xyz.com">
+                    <input type="button" value="Send code" id="email-button">
+                </div> <br>
+                <div class="verify-column">
+                    <h3>Verify OTP </h3>
+                    <input type="number" name="otp" placeholder="* * * * * *">
+                    <input type="button" value="Validate" id="email-button">
+                    <input type="button" value="Resend Code" id="email-button">
+                </div> <br>
+                <div class="country-column">
+                    <h3>Country</h3>
+                    <input type="text" name="country" placeholder="Country...">
+                </div> <br>
+                <div class="proof-column">
+                    <h3>Identify proof</h3> <br>
+                    <input type="file" name="proof" accept=".pdf"> <br>
+                    <h6>(Govt. ID or Passport- pdf, jpg, jpeg, png)</h6>
+                </div> <br>
+                <div class="address-column">
+                    <h3>Address proof</h3> <br>
+                    <input type="file" name="address" accept=".pdf"> <br>
+                    <h6>(Govt. ID or Passport- pdf, jpg, jpeg, png)</h6> <br> <br>
+                </div> <br>
+                <div class="page-bottom">
+                    <div>
+                        <input type="checkbox" id="check-input">
+                    </div>
+                    <div id="text-agreement">
+                        <h6> I agree to the Terms of Agreement</h6>
+                    </div>
+
+                    <input type="submit" value="Sign up" id="sign-button">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
